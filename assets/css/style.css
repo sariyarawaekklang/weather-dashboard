@@ -31,7 +31,19 @@ main {
     text-align: center;
 }
 
-/* LEFT SIDE OF PAGE */
+.card {
+    margin: 0 0 20px 0;
+}
+
+.card-body {
+    padding: 2.5%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 2%;
+}
+
 .btn {
     font-size: 1.3rem;
     text-decoration:none;
@@ -65,4 +77,23 @@ main {
 
 .list-item:hover {
     background-color: rgb(83, 83, 83);
+}
+
+.min-100-wh {
+    min-height: 100vh;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.justify-space-between {
+    justify-content: space-between;
 }
