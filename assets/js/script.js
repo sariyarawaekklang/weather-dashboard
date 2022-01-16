@@ -13,8 +13,8 @@ var formSubmitHandler = function(event) {
     }
 };
 
-var getCityNames = function(city) {
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?{city}&units=imperial&appid=${apiKey}";
+var getWeather = function(city) {
+    var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}";
 
     fetch(apiUrl)
         .then(function(response) {
@@ -26,4 +26,9 @@ var getCityNames = function(city) {
                 alert("Error");
             }
         })
+};
+
+var displayWeather = function(weather, searchedCity) {
+    var today = new Date();
+    document.getElementById()
 }
